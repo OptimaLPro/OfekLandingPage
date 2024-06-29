@@ -6,3 +6,56 @@
 .heebo-font{
     font-family: 'Heebo', sans-serif;
 }
+
+/* Hero.css */
+.hero-container {
+    position: relative;
+    overflow: hidden; /* Ensures bubbles don't overflow the container */
+}
+
+.bubbles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Places bubbles behind the content */
+}
+
+.bubble {
+    position: absolute;
+    background-color: #ebd9cd;
+    transform: rotate(45deg);
+    z-index: 0; /* Ensure bubbles are below the content */
+}
+
+.bubble1 {
+    width: 200px;
+    height: 300px;
+    top: -15%;
+    left: 15%;
+    border-radius: 50% 50% 40% 40%;
+}
+
+.bubble2 {
+    width: 850px;
+    height: 550px;
+    transform: rotate(150deg);
+    top: -20%;
+    right: -10%;
+    border-radius: 40% 50% 50% 40%;
+}
+
+.bubble3 {
+    width: 380px;
+    height: 450px;
+    bottom: -28%;
+    left: 1%;
+    border-radius: 50% 40% 40% 50%;
+}
+
+/* Ensure content is above bubbles */
+.grid {
+    position: relative;
+    z-index: 2;
+}
