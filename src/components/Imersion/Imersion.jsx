@@ -7,12 +7,13 @@ import Imersion5 from "/Imersion5.png";
 import Imersion6 from "/Imersion6.png";
 import Imersion7 from "/Imersion7.png";
 import Imersion8 from "/Imersion8.png";
+import "./Imersion.css";
 
 const Imersion = () => {
     return (
         <>
             <div className="bg-zinc-800">
-                <div className="flex flex-col items-center justify-center text-right text-white heebo-font">
+                <div className="flex flex-col items-center justify-center text-right text-white heebo-font background-pattern">
                     <div>
                         <img src={ImersionLogo} className="mt-20"></img>
                     </div>
