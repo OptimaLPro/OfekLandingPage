@@ -15,7 +15,7 @@ const Imersion = () => {
             <div className="bg-zinc-800">
                 <div className="flex flex-col items-center justify-center text-right text-white heebo-font background-pattern">
                     <div>
-                        <img src={ImersionLogo} className="mt-20"></img>
+                        <img src={ImersionLogo} className="p-6 mt-20 lg:p-0"></img>
                     </div>
                     <div className="w-[70%] mt-20 flex flex-col gap-10 text-xl">
                         <p className="text-5xl font-bold">בתל אביב imerSion השקת מסעדת</p>
@@ -32,7 +32,7 @@ const Imersion = () => {
                                 השלב הראשון היה יצירת סקרנות וחשיפת הקונספט לקהל</p>
                         </div>
                     </div>
-                    <div className="flex gap-4 mt-10">
+                    <div className="flex flex-col gap-4 p-6 mt-10 lg:p-0 lg:flex-row">
                         <img src={Imersion1} className="shadow-2xl"></img>
                         <img src={Imersion2} className="shadow-2xl"></img>
                         <img src={Imersion3} className="shadow-2xl"></img>
@@ -47,7 +47,7 @@ const Imersion = () => {
                             <p>.אימרסיון היא לא רק מסעדה, היא חוויה מרגשת ומרהיבה שמפעילה את כל החושים</p>
                         </div>
                     </div>
-                    <div className="flex gap-16">
+                    <div className="flex flex-col gap-16 p-6 lg:p-0 lg:flex-row">
                         <img src={Imersion4} className="shadow-2xl"></img>
                         <img src={Imersion5} className="shadow-2xl"></img>
                         <img src={Imersion6} className="shadow-2xl"></img>
@@ -58,7 +58,7 @@ const Imersion = () => {
                             <p>.אימרסיון מעניקה ל18 אנשים ערב מיוחד בו הם הדמויות הראשיות והזרקור מופנה אל כל אחד ואחד מהם באופן אישי</p>
                         </div>
                     </div>
-                    <div className="flex gap-16 mb-20">
+                    <div className="flex flex-col gap-16 p-6 mb-20 lg:flex-row lg:p-0">
                         <img src={Imersion7} className="shadow-2xl"></img>
                         <img src={Imersion8} className="shadow-2xl"></img>
                     </div>

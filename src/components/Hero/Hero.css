@@ -7,6 +7,11 @@
     font-family: 'Heebo', sans-serif;
 }
 
+.oswald-font{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
 /* Hero.css */
 .hero-container {
     position: relative;
@@ -30,6 +35,7 @@
 }
 
 .bubble1 {
+    z-index: -1;
     width: 200px;
     height: 300px;
     top: -15%;
@@ -47,6 +53,7 @@
 }
 
 .bubble3 {
+    
     width: 380px;
     height: 450px;
     bottom: -28%;

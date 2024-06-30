@@ -7,20 +7,20 @@ import SS2 from "/SS2.png";
 const Perrier = () => {
     return (
         <>
-            <div className="h-screen background">
+            <div className="lg:h-screen background">
                 <img src={PerrierLogo} className="absolute scale-90"></img>
 
-                <div className="grid grid-cols-12 gap-4">
-                    <div className="flex flex-col justify-center h-screen col-span-3">
-                        <div className="p-20 mt-32">
+                <div className="gap-4 lg:grid lg:grid-cols-12">
+                    <div className="flex flex-col justify-center col-span-3 lg:h-screen">
+                        <div className="p-10 mt-60 lg:p-20 lg:mt-32">
                             <img src={SS1} className="object-contain mx-auto mb-10 shadow-2xl"></img>
                             <img src={SS2} className="object-contain mx-auto shadow-2xl"></img>
                         </div>
                     </div>
-                    <div className="col-span-5 ">
-                        <div className="flex items-center justify-end h-screen text-white">
-                            <div className="grid grid-rows-4 gap-8 mr-10 text-xl text-right">
-                                <div className="flex items-end justify-end row-span-4 text-[50px] heebo-font font-bold tracking-wider">
+                    <div className="lg:col-span-5 ">
+                        <div className="flex items-center justify-end text-white lg:h-screen">
+                            <div className="grid-rows-4 gap-8 p-4 text-[30px] text-center lg:text-right lg:text-xl grid lg:p-0 lg:mr-10">
+                                <div className="flex lg:items-end lg:justify-end row-span-4 text-[50px] lg:text-right text-center heebo-font font-bold tracking-wider">
                                     <p>THE SPARKLING MOMENT</p></div>
                                 <div className="row-span-4 text-2xl heebo-font">
                                     <p>מטרת הפרויקט - לחזק את הההתלהבות וה"באזז" כלפי המותג</p>
@@ -45,8 +45,8 @@ const Perrier = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-4 ">
-                        <img src={BeachPaint} className="object-contain h-screen p-10"></img>
+                    <div className="lg:col-span-4 ">
+                        <img src={BeachPaint} className="object-contain p-10 lg:h-screen"></img>
                     </div>
                 </div>
             </div>
