@@ -11,6 +11,8 @@ import Isoc9 from "/Isoc9.png"
 import Isoc10 from "/Isoc10.png"
 import Isoc11 from "/Isoc11.png"
 import Isoc12 from "/Isoc12.png"
+import { FaGithub } from "react-icons/fa";
+
 
 const Isoc = () => {
     return (
@@ -99,6 +101,13 @@ const Isoc = () => {
                     </div>
                     <div className="my-10 text-[150px] amatic-font tracking-wider">
                         <p>THANK YOU</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center mb-10 heebo-font">
+                        <div><p>Made with ❤️ by Nati</p></div>
+                        <div>
+                            <a href="https://github.com/OptimaLPro" target="_blank" rel="noopener noreferrer">
+                                <FaGithub style={{ fontSize: '25px' }} /></a>
+                        </div>
                     </div>
                 </div>
             </div>
