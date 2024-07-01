@@ -12,15 +12,27 @@ import Isoc10 from "/Isoc10.png"
 import Isoc11 from "/Isoc11.png"
 import Isoc12 from "/Isoc12.png"
 import { FaGithub } from "react-icons/fa";
-
+import { motion } from "framer-motion";
+import useAnimateOnInView from '../../hooks/useAnimateOnInView';
 
 const Isoc = () => {
+    const IsocLogoAnimation = useAnimateOnInView();
+    const Isoc1Animation = useAnimateOnInView();
+    const Isoc2Animation = useAnimateOnInView();
+    const Isoc4Animation = useAnimateOnInView();
+    const Isoc5Animation = useAnimateOnInView();
+    const Isoc6Animation = useAnimateOnInView();
+    const Isoc7Animation = useAnimateOnInView();
+    const Isoc8Animation = useAnimateOnInView();
+    const Isoc10Animation = useAnimateOnInView();
+    const Isoc11Animation = useAnimateOnInView();
+
     return (
         <>
             <div className="bg-[#64b1bc]">
                 <div className="flex flex-col items-center gap-10 text-right text-white heebo-font">
                     <div className="lg:w-[80%] flex lg:justify-end">
-                        <img src={IsocLogo} className="mt-32" width={400}></img>
+                        <motion.img src={IsocLogo} {...IsocLogoAnimation} className="mt-32" width={400}></motion.img>
                     </div>
                     <div className="lg:w-[80%] lg:text-right text-center">
                         <div >
@@ -40,10 +52,10 @@ const Isoc = () => {
                     <div className="flex flex-col gap-6 w-[70%]">
                         <div className="flex flex-col-reverse gap-4 max-lg:items-center lg:gap-0 lg:flex-row lg:justify-between">
                             <div className="flex ">
-                                <img src={Isoc1} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc1} {...Isoc1Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
-                                <img src={Isoc2} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc2} {...Isoc2Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
                                 <img src={Isoc3} className="lg:ml-[150px]" width={250}></img>
@@ -51,13 +63,13 @@ const Isoc = () => {
                         </div>
                         <div className="flex flex-col-reverse gap-4 max-lg:items-center lg:gap-0 lg:flex-row lg:justify-between">
                             <div className="flex ">
-                                <img src={Isoc4} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc4} {...Isoc4Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
-                                <img src={Isoc5} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc5} {...Isoc5Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
-                                <img src={Isoc6} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc6} {...Isoc6Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                         </div>
 
@@ -69,10 +81,10 @@ const Isoc = () => {
                     <div className="flex flex-col gap-4 lg:gap-6 w-[70%]">
                         <div className="flex flex-col-reverse gap-4 max-lg:items-center lg:gap-0 lg:flex-row lg:justify-between">
                             <div className="flex ">
-                                <img src={Isoc7} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc7} {...Isoc7Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
-                                <img src={Isoc8} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc8} {...Isoc8Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
                                 <img src={Isoc9} className="lg:ml-[150px]" width={250}></img>
@@ -85,10 +97,10 @@ const Isoc = () => {
                     <div className="flex flex-col gap-6 w-[70%]">
                         <div className="flex flex-col-reverse gap-4 max-lg:items-center lg:gap-0 lg:flex-row lg:justify-between">
                             <div className="flex ">
-                                <img src={Isoc10} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc10} {...Isoc10Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
-                                <img src={Isoc11} className="border-4 rounded-md shadow-2xl" width={400}></img>
+                                <motion.img src={Isoc11} {...Isoc11Animation} className="border-4 rounded-md shadow-2xl" width={400}></motion.img>
                             </div>
                             <div className="flex ">
                                 <img src={Isoc12} className="lg:ml-[150px]" width={250}></img>

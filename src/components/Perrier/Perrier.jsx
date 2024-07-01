@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import useAnimateOnInView from '../../hooks/useAnimateOnInView';
 import "./Perrier.css";
 import BeachPaint from "/BeachPaint.png";
 import PerrierLogo from "/Perrier.png";
@@ -5,15 +7,27 @@ import SS1 from "/SS1.png";
 import SS2 from "/SS2.png";
 
 const Perrier = () => {
+
+    const perrierLogoAnimation = useAnimateOnInView();
+    const ss1Animation = useAnimateOnInView();
+    const ss2Animation = useAnimateOnInView();
+
     return (
         <>
             <div className="lg:h-screen background">
-                <img src={PerrierLogo} className="absolute scale-90"></img>
-                <div className="gap-4 lg:grid lg:grid-cols-12">
+                <motion.img
+                    src={PerrierLogo}
+                    {...perrierLogoAnimation}
+                    className="absolute scale-90"
+                />                <div className="gap-4 lg:grid lg:grid-cols-12">
                     <div className="flex flex-col justify-center col-span-3 lg:h-screen">
                         <div className="p-10 mt-60 lg:p-20 lg:mt-32">
-                            <img src={SS1} className="object-contain mx-auto mb-10 shadow-2xl"></img>
-                            <img src={SS2} className="object-contain mx-auto shadow-2xl"></img>
+                            <motion.img src={SS1}
+                                {...ss1Animation}
+                                className="object-contain mx-auto mb-10 shadow-2xl"></motion.img>
+                            <motion.img src={SS2}
+                                {...ss2Animation}
+                                className="object-contain mx-auto shadow-2xl"></motion.img>
                         </div>
                     </div>
                     <div className="lg:col-span-5 ">
