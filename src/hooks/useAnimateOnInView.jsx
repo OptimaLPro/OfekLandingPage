@@ -3,7 +3,7 @@ import { useInView } from 'framer-motion';
 
 const useAnimateOnInView = () => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: false });
+    const isInView = useInView(ref, { once: true });
     const transition = {
         type: "spring",
         stiffness: 300,
