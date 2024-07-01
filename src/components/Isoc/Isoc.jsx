@@ -19,26 +19,23 @@ const Isoc = () => {
         <>
             <div className="bg-[#64b1bc]">
                 <div className="flex flex-col items-center gap-10 text-right text-white heebo-font">
-                    <div className="w-[80%] flex justify-end">
+                    <div className="lg:w-[80%] flex lg:justify-end">
                         <img src={IsocLogo} className="mt-32" width={400}></img>
                     </div>
-                    <div className="w-[80%] text-right">
+                    <div className="lg:w-[80%] lg:text-right text-center">
                         <div >
-                            <p className="text-[55px] font-bold tracking-wide">"השקה חוזרת של מתחם חדש בעברית בסיומת ".ישראל</p>
+                            <p className="text-[40px] my-10 lg:my-0 lg:text-[55px] font-bold tracking-wide rtl">השקה חוזרת של מתחם חדש בעברית בסיומת ".ישראל"</p>
                         </div>
                     </div>
-                    <div className="w-[80%] text-right text-4xl tracking-wide">
-                        <p className="mb-4 text-4xl font-bold tracking-wide"> - מסרים מרכזיים</p>
-                        <p>עידוד רישום דומיין ישראלי כאשר כעת אפשרות השימוש בדומיין ובכתובת</p>
-                        <p>האתר בעברית באופן מלא פתוחה לציבור ואף גרפה הצלחה ועובדת עם</p>
-                        <p>.למעלה מ-700 דומיינים שנרשמו במרחב השמות החדש</p>
+                    <div className="w-[80%] text-right text-2xl lg:text-4xl tracking-wide rtl">
+                        <p className="mb-4 text-4xl font-bold tracking-wide">מסרים מרכזיים - </p>
+                        <p>עידוד רישום דומיין ישראלי כאשר כעת אפשרות השימוש בדומיין ובכתובת האתר בעברית באופן מלא פתוחה לציבור ואף גרפה הצלחה ועובדת עם למעלה מ700 דומיינים שנרשמו במרחב השמות החדש.</p>
                     </div>
-                    <div className="my-10 mb-4 text-4xl tracking-wide w-[80%]">
-                        <p > - במהלך הקמפיין התמקדנו ב-3 קונספטים שונים</p>
+                    <div className="my-10 mb-4 text-2xl lg:text-4xl tracking-wide w-[80%] rtl">
+                        <p className="font-bold drop-shadow-lg">במהלך הקמפיין התמקדו ב-3 קונספטים שונים - </p>
                     </div>
-                    <div className="my-10 mb-4 text-4xl tracking-wide w-[80%]">
-                        <p>CAPSLOCK, SHIFT & ALT ,בישראל התנהג כישראלי - עכשיו שהסיומת כתובה בעברית</p>
-                        <p>.כפתורי שינוי השפה במקלדת מנסים להטמע בתרבות הישראלית</p>
+                    <div className="my-10 mb-4 text-2xl lg:text-4xl tracking-wide w-[80%] rtl">
+                        <p>בישראל התנהג כישראלי - עכשיו כשהסיומת כתובה בעברית, CONTROL, SHIFT & ALT, כפתורי שינוי השפה במקלדת מנסים להטמע בתרבות הישראלית.</p>
                     </div>
                     <div className="flex flex-col gap-6 w-[70%]">
                         <div className="flex flex-col-reverse gap-4 max-lg:items-center lg:gap-0 lg:flex-row lg:justify-between">
@@ -66,8 +63,8 @@ const Isoc = () => {
 
 
                     </div>
-                    <div className="my-10 mb-4 text-4xl tracking-wide w-[80%]">
-                        <p>!ולנו יש .ישראל - נכון, יש דברים שעדיין לא הגיעו לישראל, אבל הדבר הכי חשוב כבר כאן</p>
+                    <div className="my-10 mb-4 text-2xl lg:text-4xl tracking-wide w-[80%] rtl">
+                        <p>ולנו יש .ישראל – נכון, יש דברים שעדיין לא הגיעו לישראל, אבל הדבר הכי חשוב כבר כאן! </p>
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-6 w-[70%]">
                         <div className="flex flex-col-reverse gap-4 max-lg:items-center lg:gap-0 lg:flex-row lg:justify-between">
@@ -82,9 +79,8 @@ const Isoc = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="my-10 mb-4 text-4xl tracking-wide w-[80%]">
-                        <p>,דברו עברית בבקשה - משתמשים בשפה שלנו. למדינת ישראל יש שפה עשירה, מיוחדת ומרתקת</p>
-                        <p>?אז למה בעצם שלא נשתמש בה במרחב הרשת</p>
+                    <div className="my-10 mb-4 text-2xl lg:text-4xl tracking-wide w-[80%] rtl">
+                        <p>דברו עברית בבקשה - משתמשים בשפה שלנו. למדינת ישראל יש שפה עשירה, מיוחדת ומרתקת, אז למה בעצם שלא נשתמש בה במרחב הרשת?</p>
                     </div>
                     <div className="flex flex-col gap-6 w-[70%]">
                         <div className="flex flex-col-reverse gap-4 max-lg:items-center lg:gap-0 lg:flex-row lg:justify-between">

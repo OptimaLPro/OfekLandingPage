@@ -1,6 +1,7 @@
 import React from "react";
 import Ofek from "/Ofek.png";
 import "./Hero.css";
+import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
@@ -14,10 +15,19 @@ const Hero = () => {
                 <div className="z-10 lg:col-span-6 ">
                     <div className="z-10 flex items-center justify-center lg:h-screen">
                         <div className="z-10 lg:grid lg:grid-rows-12 text-center lg:text-right lg:gap-8 lg:w-[80%] lg:text-xl">
-                            <div className="z-10 flex justify-center lg:items-end lg:justify-end row-span-4 my-5 lg:my-0 lg:tracking-widest text-[80px] lg:text-[100px] amatic-font">
-                                <p className="drop-shadow-md">Ofek Shmuely</p>
+                            <div className="z-10 flex justify-center lg:items-end lg:justify-end row-span-4 mt-5 lg:my-0 lg:tracking-widest text-[80px] xl:text-[100px] amatic-font">
+                                <motion.p
+                                    initial={{rotate: 180, scale: 0 }}
+                                    animate={{rotate: 0, scale: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 1000,
+                                        damping: 20,
+                                        delay: 0.3 
+                                    }}
+                                    className="drop-shadow-md">Ofek Shmuely</motion.p>
                             </div>
-                            <div className="row-span-4 p-4 text-2xl lg:mt-10 lg:mr-4 lg:p-0 heebo-font dir-rtl">
+                            <div className="row-span-4 p-8 text-2xl tracking-wide lg:mt-10 lg:mr-4 lg:p-0 heebo-font rtl">
                                 <p>שלום, נעים להכיר!</p>
                                 <p>אני אופק שמואלי אבל החברים הטובים באמת קוראים לי פשוט אופק כי אין לי כינוי. מה שכן יש לי, זה אהבה למילים, לכתיבה ויצירה.</p>
                                 <p>אני לא אוהב להגיד על עצמי שאני חריג ומיוחד, אבל מכיוון שזה האתר שלי ומותר לי להגיד כאן הכל, אני אגיד שאני מסתכל על הדברים מנקודת מבט אחרת, חושב מחוץ לקופסא (וגם בתוכה כשצריך), TEAM PLAYER ועובד מסור.</p>
@@ -36,7 +46,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="z-10 flex justify-center col-span-6 mt-4 lg:mt-0 lg:justify-start">
+                <div className="z-10 flex justify-center col-span-6 mt-8 lg:mt-0 lg:justify-start">
                     <img src={Ofek} className="object-contain lg:h-screen" alt="Ofek Shmuely" />
                 </div>
             </div>

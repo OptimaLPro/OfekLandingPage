@@ -12,12 +12,9 @@ const Norman = () => {
             <div className="bg-[#fdf3e7] h-max">
                 <div className="flex flex-col-reverse gap-10 text-right lg:flex-row lg:justify-center lg:items-end heebo-font">
                     <div className="lg:w-[60%] text-[#743956] lg:text-2xl">
-                        <p className="mb-5 text-[60px] font-bold text-center lg:text-right">הפרצוף אומר הכל</p>
-                        <div className="max-lg:text-[20px] p-4 lg:p-0">
-                            <p>סטודיו נורמן הוא סטודיו צעיר ודינמי המורכב מאמנים צעירים </p>
-                            <p>ושאפתניים. הסטודיו מציע מגוון של יצירות אישיות המבוססות על</p>
-                            <p>,תמונות הלקוח ומדפיס אותם על אקססוריז שונים כמו גרביים, תיקים</p>
-                            <p>.'כפפות תנור, בוקסרים וכו</p>
+                        <p className="mb-5 text-[60px] font-bold text-center lg:text-right rtl">הפרצוף אומר הכל</p>
+                        <div className="max-lg:text-[20px] p-4 lg:p-0 rtl">
+                            <p className="lg:w-[60%]">סטודיו נורמן הוא סטודיו צעיר ודינמי המורכב מאמנים צעירים ושאפתניים. הסטודיו מציע מגוון של יצירות אישיות המבוססות על תמונות הלקוח ומדפיס אותן על אקססוריז שונים כמו גרביים, תיקים, כפפות תנור, בוקסרים וכו'.</p>
                         </div>
                     </div>
                     <div className="flex justify-center lg:justify-start lg:w-[40%]">
@@ -36,12 +33,11 @@ const Norman = () => {
                 <div>
                     <div className="flex flex-col justify-center p-6 lg:gap-32 lg:flex-row max-lg:items-center lg:p-0">
                         <div className="flex flex-col gap-10 mb-16 lg:justify-around lg:flex-row">
-                            <img src={Norman3} className="shadow-2xl" width={400}></img>
-                            <img src={Norman4} className="shadow-2xl" width={400}></img>
-                            <img src={Norman5} className="shadow-2xl" width={400}></img>
+                            <img src={Norman3} className="w-full shadow-2xl lg:w-auto lg:max-w-xs" alt="Norman 3"></img>
+                            <img src={Norman4} className="w-full shadow-2xl lg:w-auto lg:max-w-xs" alt="Norman 4"></img>
+                            <img src={Norman5} className="w-full shadow-2xl lg:w-auto lg:max-w-xs" alt="Norman 5"></img>
                         </div>
                     </div>
-
                 </div>
             </div>
         </>
