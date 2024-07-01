@@ -62,7 +62,7 @@ const Hero = () => {
                                             .pause(99)
                                             .delete(1)
                                             .pause(509)
-                                            .type("i")
+                                            .type("y")
                                             return instance;
                                         }}
                                     />;
