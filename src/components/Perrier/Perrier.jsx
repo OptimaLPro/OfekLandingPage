@@ -33,7 +33,7 @@ const Perrier = () => {
                     <div className="lg:col-span-5 ">
                         <div className="flex items-center justify-end text-white lg:h-screen">
                             <div className="grid-rows-4 gap-8 p-4 text-[30px] text-center lg:text-right lg:text-xl grid lg:p-0 xl:mr-10">
-                                <div className="lg:flex lg:items-end lg:justify-end row-span-4 text-[50px] lg:text-right text-center heebo-font font-bold tracking-wider">
+                                <div className="lg:flex lg:items-end lg:justify-end row-span-4 text-[50px] lg:w-1/2 lg:ml-auto xl:w-full leading-10 lg:text-right text-center heebo-font font-bold tracking-wider">
                                     <p>THE SPARKLING MOMENT</p></div>
                                 <div className="row-span-4 text-2xl heebo-font rtl">
                                     <p>מטרת הפרויקט – לעורר התלהבות ו"באזז" כלפי המותג ולחזק את מיצובו כמותג פרימיום שמקדם אמנות ישראלית מודרנית.</p>
